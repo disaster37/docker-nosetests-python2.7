@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
     python-nose \
     python-mock \
     python-setuptools \
-    python-dev
+    python-dev \
     libpq-dev \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
