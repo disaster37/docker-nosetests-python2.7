@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
     python-setuptools \
     python-dev \
     libpq-dev \
+    build-essential \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
 
