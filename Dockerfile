@@ -14,7 +14,8 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
     libpq-dev \
     build-essential \
 && apt-get clean \
-&& rm -rf /var/lib/apt/lists/*
+&& rm -rf /var/lib/apt/lists/* \
+&& pip install --upgrade pip
 
 
 ENV PYTHONIOENCODING utf-8
